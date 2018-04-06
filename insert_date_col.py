@@ -25,7 +25,7 @@ def add_date_col (old, new):
 				l = len(row)
 
 				# Check to make sure rows are same as number of days
-				if l != num_days:
+				if len(new_col) != num_days:
 					raise Exception('num_rows != num_days...')
 
 				row.append("x")
